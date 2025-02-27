@@ -112,6 +112,15 @@ body {
     padding: 10px;
     border: 1.5px solid #ddd;
     background: #f1f1f1;
+    
+}
+
+.project:hover {
+    transform: scale3d(1.05, 1.05, 1.05);
+    transition: transform 0.9s, border 0.5s, background-color 0.3s;
+    background-color: #2C3E50;
+    color: #E6E0E9;
+    border: 1.5px solid #2C3E50;
 }
 
 .links a {
