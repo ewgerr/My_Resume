@@ -1,9 +1,11 @@
+
 body {
     font-family: Georgia, sans-serif;
     margin: 0;
     padding: 0;
     background: #f8f9fa;
     color: #2C3E50;
+    
 }
 
 .container {
@@ -12,9 +14,11 @@ body {
     margin: 20px auto;
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .sidebar {
+    border-radius: 10px 0 0 10px;
     position: relative;
     width: 50%;
     background: #2d3748;
@@ -23,6 +27,7 @@ body {
     text-align: center;
 }
 .profile-photo {
+    border-radius: 10px 0 0 0;
     background-image: url('img/рез.jpg');
     background-size: cover; 
     background-position: center; 
