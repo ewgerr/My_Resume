@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    
+    <script>document.addEventListener('DOMContentLoaded', function() {
+        const themeToggle = document.getElementById('theme-toggle');
+        themeToggle.addEventListener('click', function() {
+            document.body.classList.toggle('dark-theme');
+        });
+    });</script>
+
+
     <div class="container">
         <div class="sidebar">
             <div class="profile-photo">
@@ -105,6 +115,7 @@
                 </div>
                
             </section>
+            <button id="theme-toggle">Toggle Theme</button>
         </main>
     </div>
 </body>
