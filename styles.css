@@ -212,34 +212,29 @@ body {
 .socials {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    /* padding: 5px;
-    margin-top: 5px; */
+    justify-content: center;
+    gap: 12%;
+    padding: 5px;
+    margin-top: 5px;
 }
 
 .socials a {
-    /* display: block;
+    display: block;
     margin-top: 5px;
     color: #E6E0E9;
-    padding: 10px;
+    background-color: #2C3E50;
+    padding: 5px 5px;
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
-    transition: transform 0.3s, background-color 0.3s, border 0.3s, border-radius 0.3s; */
-    margin-top: 20px;
-    text-align: left;
-    color: #E6E0E9;
-    text-decoration: none;
-    font-size: 16px;
-    padding-left:10px;
-    transition: color 0.3s;
+    transition: transform 0.3s, background-color 0.3s, border 0.3s;
 }
 
 .socials a:hover {
-    
-    /* transform: scale(1.05); */
+    transform: scale(1.05);
     border: 3px solid #ddd;
     background-color: #2d3748;
+    color: #E6E0E9;
 }
 
 
