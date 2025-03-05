@@ -8,6 +8,8 @@
     --hover-border-color: #ddd; /* Рамка при наведенні */
     --pojects-background-color:#f1f1f1; /* Світлий фон для проектів */
     --box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    --background-image: url('img/рез.jpg');
+
 }
 /* Темна тема */
 body.dark-theme {
@@ -20,6 +22,7 @@ body.dark-theme {
     --hover-background-color: #3C3C3C; /* Світліший фон при наведенні */
     --hover-border-color: #ddd; /* Ліловий для рамки при наведенні */
     --pojects-background-color:#3d3d3e; /* Темно-сірий фон для проектів */
+    --background-image: url('img/рез1.jpg');
 }
 * {
     box-sizing: border-box;
@@ -30,12 +33,14 @@ body {
     padding: 0;
     background: var(--body-background-color);
     color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
 }
+
 #theme-toggle {
     position: fixed;
-    top: 20px;
-    left: 20px;
-    padding: 5px 5px;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
     background-color: var(--primary-color);
     color: var(--secondary-color);
     border: none;
@@ -43,6 +48,7 @@ body {
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
+
 
 #theme-toggle:hover {
     background-color: var(--hover-background-color);
@@ -53,8 +59,8 @@ body {
     max-width: 1000px;
     margin: 20px auto;
     background: var(--background-color);
-    /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); */
     box-shadow: var(--box-shadow);
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 .sidebar {
     position: relative;
@@ -63,11 +69,11 @@ body {
     color: white;
     padding: 0px;
     text-align: center;
-    /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); */
     box-shadow: var(--box-shadow);
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 .profile-photo {
-    background-image: url('img/рез.jpg');
+    background-image: var(--background-image);
     background-size: cover; 
     background-position: center; 
     width: 100%;
@@ -75,6 +81,7 @@ body {
     display: block;
     position: relative;
     border: none;
+    transition: background-image 0.3s;
 }
 .photo-caption {
     position: absolute;
@@ -84,6 +91,12 @@ body {
     padding: 3px;
     text-align: center;
 }
+
+.name, .age, .skills, .inform, .project, .links a, .cont {
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+}
+
+
 .name {
     color: var(--primary-color); 
     font-size: 37px;
